@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* System font stack */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: linear-gradient(to bottom, #f8fafc, #e2e8f0);
+  color: #1a202c;
+}
+
+[data-theme="dark"] body {
+  background: linear-gradient(to bottom, #1a1b23, #0f1419);
+  color: #e2e8f0;
+}
+
+/* Custom styles for image containers */
+.image-container {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105;
+}
+
+.image-grid {
+  @apply grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
+}
